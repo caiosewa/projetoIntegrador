@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>AmaZ - Contato</title>
+    <link rel="icon" href="LOGO_ICON-01.png">
+    <link rel="stylesheet" href="contato.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-bege">
+            <a class="navbar-brand" href=# target="_blank">
+                <img src="LOGO_ICON-01.png" width="35" height="35" class="d-inline-block align-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#"> Inicio <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../contato/contato.html">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../sobre_nos/sobre_nos.html">Sobre Nós</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Entrar</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div style="margin-top:20px" class="container">
+        <div style="text-align: center;" class="row">
+            <div class="col-12">
+                <!-- <img src="/Imagens/LOGO_MENOR-01.png" alt="Logo da AmaZ" id="Logo"> -->
+            </div>
+            <div class="col-12" id="caixa1">
+                <img src="CONTATO-01.png" alt="Título da página: Contato" id="titcontato">
+            </div>
+
+
+
+            <form>
+                <div>
+                    <label class="titulos" for="name">Nome:</label>
+                    <input type="text" id="name" name="name_usuario">
+                    <div style="display: none" class="alert alert-danger" role="alert-name" id="alert-name">
+                    </div>
+                </div>
+                <div>
+                    <label class="titulos" for="email">E-mail:</label>
+                    <input type="email" id="email" name="email_usuario" size="40" maxlength="40">
+                    <small id="emailHelp" class="form-text text-muted">Nunca compartilharemos seu email com mais
+                        ninguém.</small>
+                    <div style="display: none" class="alert alert-danger" role="alert-email" id="alert-email">
+                    </div>
+                </div>
+                <div>
+                    <label class="titulos" for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone_usuario" onkeypress="return event.charCode >= 48 && event.charCode <= 57" maxlength="14">
+                    <div style="display: none" class="alert alert-danger" role="alert-tel" id="alert-tel">
+                    </div>
+                </div>
+                <div>
+                    <label class="titulos" for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem_usuario"></textarea>
+                    <div style="display: none" class="alert alert-danger" role="alert-mensagem" id="alert-mensagem">
+                    </div>
+                </div>
+                <div>
+                    <button class="btn" type="button" onclick="validateForm()">Enviar</button>
+                    <button class="btn" type="reset">Redefinir</button>
+                </div>
+            </form>
+
+
+
+            <footer class="container-fluid text-center">
+
+            </footer>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="contato.js"></script>
+</body>
+
+</html>
